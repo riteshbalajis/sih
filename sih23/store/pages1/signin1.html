@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css//login.css' %}">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Store Login</h1>
+    <div id="userform">
+        <h1>Sign In</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="formelements">
+                <label for="">Username</label><br>
+                <input type="text" placeholder="Enter yourUser Name" name="username" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">Password</label><br>
+                <input type="password" placeholder="Enter your Password" name="pass1" class="forminputs"><br>
+            </div>
+                <button type="submit" id="but">LOGIN</button>
+            <div style="margin-left: 10vw;width:20vw;">
+                <p style="text-align: center;font-size: 1.3em;">Do you have an account?</p>
+                <div style="text-align: center;height: 3vh;width: 20vw;background-color:whitesmoke;border-radius: .5vh;"><a href="/bussiness/storesignup">SIGN UP</a></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

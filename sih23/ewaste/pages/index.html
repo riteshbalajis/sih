@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css//index.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in messages %}
+    <div class="alert alert-{{i.tags}} alert-dismissable fade show " role="alert">
+        <strong>MESSAGE:</strong>{{i}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    <h1>WELCOME TO OUR WEBSITE</h1>
+    <div id="check">
+        <p>ARE YOU A BUSSINESS ENTITY OR USER</p>
+        <div class="check1">
+            <a href="home/">USER</a>    
+        </div>
+        <div class="check1">
+            <a href="bussiness/">BUSSINESS ENTITY</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>

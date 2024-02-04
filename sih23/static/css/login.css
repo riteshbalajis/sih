@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+#userform{
+    margin-left: 30vh;
+    background-color: black;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 3vh;
+    text-align: center;
+}
+.forminputs{
+    margin: 1vh;
+    height: 2vh;
+    width: 25vw;
+    border-radius: 2vh;
+    color:black;
+    text-align: center;
+}

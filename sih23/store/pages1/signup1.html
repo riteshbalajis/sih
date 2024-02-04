@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css//login.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STORE SIGN UP</h1>
+    <div id="userform1">
+        <h1>SIGN UP</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="formelements">
+                <label for="">Shop Name</label><br>
+                <input type="text" name="shopname" placeholder="Shop Name" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">Shop Number</label><br>
+                <input type="text" placeholder="shopno" name="shopno" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">Address</label><br>
+                <input type="text" placeholder="Address" name="address" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">City</label><br>
+                <input type="text" placeholder="City" name="city" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">District</label><br>
+                <input type="text" placeholder="District" name="district" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">Pincode</label><br>
+                <input type="text" placeholder="Pincode" name="pincode" class="forminputs"><br>
+            </div>
+            <div class="formelements">
+                <label for="">Contact</label><br>
+                <input type="text" placeholder="Contact" name="contact" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">First Name</label><br>
+                <input type="text" placeholder="Owner First Name" name="ownerfirstname" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">Second Name</label><br>
+                <input type="text" placeholder="Owner Second Name" name="ownersecondname" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">Username</label><br>
+                <input type="text" placeholder="Username" name="ownerusername" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">Email</label><br>
+                <input type="text" placeholder="E-mail" name="email" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">Password</label><br>
+                <input type="password" placeholder="Password" name="password" class="forminputs"><br>
+            </div>
+            
+            <div class="formelements">
+                <label for="">Confirm Password</label><br>
+                <input type="password" placeholder="Confirm Password" name="confirmpass" class="forminputs"><br>
+            </div>
+            <button type="submit" id="but">SIGN UP</button>
+        </form>
+    </div>    
+</body>
+</html>

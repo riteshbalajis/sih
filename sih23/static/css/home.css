@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+}
+#head{
+    height: 13vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    color:black;
+    font-family: monospace;
+}
+#title{
+    height: 13vh;
+    width: 40vw;
+    margin-left: 3vw;
+    font-size: 4em;
+    line-height: 13vh;
+}
+.menu{
+    height: 13vh;
+    line-height: 13vh;
+    margin-left: 2vh;
+    font-size: 2em;
+    width: 10vw;
+    color:black;
+}
+#profile{
+    margin-top: 2vh;
+    height: 10vh;
+    width: 10vh;
+}
+#profile img{
+    border-radius: 5vh;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#finding{
+    margin-top: 3vh;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 1.5em;
+    text-align: center;
+}
+#form{
+    margin-top: 3vh;
+    width: 70vw;
+    margin-left: 15vw;
+    text-align: center;
+}
+#form input{
+    height: 2vh;
+    width: 20vw;
+}
+#form1{
+    width: 70vw;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    justify-content: center;
+    text-align: center;
+}
+#userform{
+    width: 40vw;
+    height: 50vh;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    background-color: antiquewhite;
+    border-radius: 5vh;
+}
+#userform h1{
+    text-align: center;
+}
+.formelements{
+    height: 5vh;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    font-size: 1.3em;
+}
+.formelements input{
+    height: 3vh;
+    width: 20vw;
+    border-radius: .5vh;
+    text-align: center;
+}
+#userform button{
+    height: 3vh;
+    width: 20vw;
+    border-radius: .5vh;
+
+}
+#but{
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+}
+#userform1{
+    height: 90vh;
+    width: 40vw;
+    margin-left: 30vw;
+    text-align: center;
+    border-radius: 5vh;
+    background-color: antiquewhite;
+}
+#userform1 button{
+    height: 3vh;
+    margin-right: 10vw;
+    width: 20vw;
+    border-radius: .5vh;
+}

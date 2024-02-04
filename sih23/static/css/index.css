@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+h1{
+    font-size: 1.4em;
+    text-align: center;
+}
+#check{
+    margin: 5vh;
+    display: flex;
+}
+.check1{
+    margin: 2vh;
+    
+}

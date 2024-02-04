@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<link rel="stylesheet" href="{% static 'login' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        Filter By District
+        <input type="text" name="district" placeholder="Enter the district" class="forminputs"><br>
+        <button type="submit">Search</button>
+    </form>
+    <div id="form1">
+        {% for i in values %}
+        <div id="shopdetails">
+            <div>{{i.0}}</div>
+            <div>{{i.1}}</div>
+            <div>{{i.2}}</div>
+            <div>{{i.3}}</div>
+            <div>{{i.4}}</div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+Welcome to djano login
+
+Hello {{fanme}}!
+
+Please confirm your email
+
+Confirmation link: http://{{domain}}{% url 'activate' uidb64=uid% token=token }

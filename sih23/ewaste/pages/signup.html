@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css//home.css' %}">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">
+        <div id="title">E-LOCUS</div>
+        <div class="menu">About</div>
+        <div class="menu">Awareness</div>
+        {% if user.is_authenticated %}
+        <div class="menu"><a href="/home/logout">Logout</a></div>
+        {% else %}
+        <div class="menu"><a href="/home/userlogin">Login</a></div>
+        {% endif %}
+        <div class="menu">Contact</div>
+        <div id="profile"><a href="/home/profile"><img src="{% static 'images//user.jpg' %}"></a></div>
+    </div>
+    {% for i in messages %}
+    <div class="alert alert-{{i.tags}} alert-dismissable fade show " role="alert">
+        <strong>MESSAGE:</strong>{{i}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+<div id="userform1">
+    <h1>SIGN UP</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="formelements">
+            <label for="">First Name</label><br>
+            <input type="text" name="firstname" placeholder="First Name" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">Second Name</label><br>
+            <input type="text" placeholder="Second Name" name="secondname" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">User Name</label><br>
+            <input type="text" placeholder="User Name" name="username" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">Mobile Number</label><br>
+            <input type="text" placeholder="Mobile Number" name="phoneno" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">E-Mail</label><br>
+            <input type="text" placeholder="E-Mail" name="email" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">Password</label><br>
+            <input type="password" placeholder="Password" name="password" class="forminputs"><br>
+        </div>
+        <div class="formelements">
+            <label for="">Confirm Password</label><br>
+            <input type="password" placeholder="Confirm Password" name="confirmpass" class="forminputs"><br>
+        </div>
+        <button type="submit" id="but">SIGN UP</button>
+    </form>
+</div>    
+</body>
+</html>
